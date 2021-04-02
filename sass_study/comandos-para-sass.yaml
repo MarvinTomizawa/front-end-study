@@ -1,0 +1,2 @@
+inicar_compilação: "sass estilos.scss:estilos.css"
+manter_compilação_ativa: "sass --watch estilos.scss:estilos.css"

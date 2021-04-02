@@ -1,0 +1,20 @@
+.lista-notas{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 10px;
+}
+
+.nota{
+    background-color: lemonchiffon;
+    border: solid black 2px;
+    box-sizing: border-box;
+    border-radius: 10px 0;
+    height: 43vh;
+    width: 14rem;
+    margin: 20px;
+}

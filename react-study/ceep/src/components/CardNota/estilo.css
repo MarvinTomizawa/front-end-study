@@ -1,0 +1,44 @@
+.card-nota{
+    text-align: center;
+}
+
+.card-nota__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-nota__delete{
+    padding: 0;
+    padding-top: .1rem;
+    width: 20%;
+}
+
+.card-nota__delete:hover{
+    cursor: pointer;
+}
+.card-nota__conteudo{
+    padding: 1rem;
+    padding-top: .1rem;
+}
+
+.card-nota__titulo{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.card-nota__categoria{
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    font-size: .8rem;
+    margin: .1rem .1rem 0 ;
+    padding: .05rem 0;
+    width: 50%;
+}
+
+.card-nota__descricao{
+    color: gray;
+    margin-block-start: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+}

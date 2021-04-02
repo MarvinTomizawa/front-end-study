@@ -1,0 +1,20 @@
+{
+  "name": "javascriptstudy",
+  "version": "1.0.0",
+  "description": "study of javascript",
+  "main": "Exercise3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarvinTomizawa/javascript-study.git"
+  },
+  "author": "Marvin Massaru Tomizawa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarvinTomizawa/javascript-study/issues"
+  },
+  "homepage": "https://github.com/MarvinTomizawa/javascript-study#readme",
+  "type": "module"
+}

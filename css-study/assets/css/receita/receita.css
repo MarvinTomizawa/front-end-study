@@ -1,0 +1,11 @@
+.receita{
+    display: grid;
+    width: 25%;
+    height: 400px;
+    background-color: white ;
+    margin: 2rem;
+    box-sizing: border-box;
+
+    grid-template-rows: 180px 220px;
+    grid-template-areas: "receita-imagem" "receita-descricao";
+}

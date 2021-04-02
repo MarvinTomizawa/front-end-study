@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo indexsetdb</title>
+</head>
+<body>
+    <script src="./js/models/Negociacao.js"></script>
+    <script>
+        var conection;
+        var openRequest = window.indexedDB.open('aluraframe', 3); // Nome do indexDb, Numero da versão
+
+        openRequest.onupgradeneeded = event => {
+            console.log("Cria ou altera um banco já existente");
+            let minhaconexao = event.target.result;
+
+            if(minhaconexao.objectStoreNames.contains('negociacoes')){
+                minhaconexao.deleteObjectStore('negociacoes');
+            }
+
+            minhaconexao.createObjectStore('negociacoes', { autoIncrement: true });
+        }
+
+        openRequest.onsuccess = event => {
+            console.log('Conexão obtida com sucesso');
+
+            conection = event.target.result;
+        }
+
+        openRequest.onerror = event =>{
+            console.log(e.target.error);
+        }
+        
+
+        function adiciona(){
+
+            let transaction = conection.transaction(['negociacoes'], 'readwrite'); // Pega uma transação de Qual a store e qual o tipo de acesso
+
+            let store = transaction.objectStore('negociacoes'); // Pega a conexão com a object store
+
+            let negociacao = new Negociacao(new Date(), 1, 200);
+
+            let request = store.add(negociacao); // Adiciona um objeto dentro do store
+
+            request.onsuccess = event =>{
+                console.log("negociacao incluida com sucesso");
+            }
+
+            request.onerror = event => {
+                console.log("Não foi possivel incluir a negociacao");
+            }
+        }
+
+        function listaTodos(){
+            let transaction = conection.transaction(['negociacoes'], 'readwrite'); // Pega uma transação de Qual a store e qual o tipo de acesso
+
+            let store = transaction.objectStore('negociacoes'); // Pega a conexão com a object store
+
+            let cursor = store.openCursor();
+
+            let negociacoes = [];
+
+            cursor.onsuccess = event => {
+                let atual = event.target.result;
+
+                if(atual){
+                    var dado = atual.value;
+
+                    negociacoes.push(new Negociacao(dado._data, dado._quantidade, dado._valor));
+
+                    atual.continue();
+                } else{
+                    console.log(negociacoes);
+                }
+            }
+
+            cursor.onerror = event  => {
+                console.log(event.target.error.name);
+            }
+        }
+    </script>
+</body>
+</html>

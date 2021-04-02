@@ -1,0 +1,230 @@
+.gray-list {
+    text-align: center;
+    color: gray;
+    list-style: none;
+}
+
+.center-list{
+    position: relative;
+    display: flex;
+}
+
+.center-list ul, .center-list ol{
+    margin: 0 auto;
+}
+
+.inner-list {
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+}
+
+.logo {
+    width: 20%;
+}
+
+header{
+    background-color: cornflowerblue;
+}
+
+nav{
+    position: absolute;
+    display: inline;
+    top: 5em;
+    right: 0px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:red;
+    text-decoration: dotted;
+}
+
+nav li{
+    display: inline;
+    vertical-align: top;
+    margin-left: 2em;
+}
+
+.header-content{
+    position: relative;
+    width: 90em;
+    margin: 0 auto;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+}
+
+.header-list {
+    list-style: none;
+    display: inline;
+    vertical-align: top;
+}
+
+.not-available{
+    cursor: no-drop;
+}
+
+.conteudos {
+    padding: 2em 0;
+    width: 105em;
+    margin: 0 auto;
+}
+
+.conteudos li{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: .5em;
+    border-style: double;
+    border-radius: 10px;
+}
+
+.conteudos li:hover {
+    border-style: solid;
+    border-color: red;
+    background-color: rgb(255, 70, 70)
+}
+
+.conteudos li:active {
+    border-style: solid;
+    border-color: green;
+    background-color: rgb(70, 255, 95)
+}
+
+.conteudos h2{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.conteudos img {
+    margin: 4em 0;
+}
+
+.conteudo-title{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: .5em;
+}
+
+.github-logo{
+    margin-top: .5em;
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.github-logo img{
+    margin: 1em;
+    width: 3em;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+}
+
+footer .copyright{
+    padding: .5em 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.centered{
+    width: 90em;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,  form legend {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+form .input-centered, form textarea {
+    display: block;
+    margin-bottom: 1.5em;
+    width: 50%;
+    font-size: 2em;
+}
+
+.form-submit {
+    margin-top: 3em;
+    color: white;
+    background-color: orange;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding:1em 5em;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.form-submit:hover{
+    background-color: darkorange;
+    transform: scale(1.2);
+}
+
+thead {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 2em;
+}
+
+td, th {
+    margin: 20px 0px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 0px 1em;
+}
+
+.menu-list-content {
+    margin-bottom: 4em;
+}
+
+.menu-list-content h1 {
+    color: gray;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1em;
+}
+.menu-list-content hr {
+    margin: 1em auto;
+}
+
+.menu-list-content li {
+    font-size: 1.5em;
+    margin: .5em auto;
+    text-align: center;
+}
+
+.menu-list-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list-content a:hover {
+    color: rgb(194, 0, 0);
+}

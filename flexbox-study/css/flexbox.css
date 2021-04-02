@@ -1,0 +1,114 @@
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    height: 16em;
+    /** flex-direction: column;  Muda direção do alinhamento do flexbox 
+        flex-wrap: wrap; Realiza a quebra de linha do conteudo caso estrapolar o tamanho definido **/
+    flex-flow: column wrap;
+    /* Une os dois comando acima */
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+@media(max-width: 769px) {
+    .cabecalhoPrincipal .container {
+        align-items: stretch;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link{
+        width: 100%;
+    }
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+    }
+
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videoSobre .container{
+        flex-direction: column;
+    }
+
+    .videoSobre-sobre{
+        order: -1;
+        margin-bottom: 10px;
+    }
+} 

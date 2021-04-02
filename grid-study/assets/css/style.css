@@ -1,0 +1,30 @@
+.app {
+    background-color: rgb(241, 241, 241);
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    /* Usado para definir as areas do template (Onde ficarão posicionadas), deve seguir a ordem que ficarão posicionadas */
+    grid-template-areas:  
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-rows: 8vh auto auto; /* Olhando para o template, ele define a altura de cada linha  */
+    grid-template-columns: auto; /* Olhando para o template, ele define a largura de cada coluna  */
+}
+
+.cabecalho {
+    grid-area: cabecalho; /* Utiliza para linkar este style ao template do grid */
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+    margin: 0 2rem;
+}
+
+.rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape;
+    padding: 1rem;
+    text-align: center;
+}

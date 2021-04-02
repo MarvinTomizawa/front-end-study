@@ -1,0 +1,31 @@
+.formulario-categoria{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: solid 5px darkgray;
+}
+
+.formulario-categoria__inputs{
+    text-align: center;
+}
+
+.formulario-categoria__titulo{
+    margin-block-start: 0;
+    color: white;
+}
+
+.categoria-input{
+    display: flex;
+    width: 100%;
+}
+
+.categoria-input__input{
+    border: none;
+    border-right: solid 1px  black;
+    height: 100%;
+    width: 70%;
+}
+
+.categoria-input__button{
+    border: none;
+    width: 30%;
+}

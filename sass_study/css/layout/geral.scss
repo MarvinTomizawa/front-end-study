@@ -1,0 +1,55 @@
+/** Geral **/
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+
+  @media #{$mq-mobile} {
+    width: 90%;
+    margin: 10px;
+  }
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.titulo-secao {
+  text-decoration: underline;
+  font-size: 2em;
+  text-align: center;
+}
+
+.sobre,
+.planos,
+.blog,
+.contato {
+  padding: 3em 0 6em 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contato input,
+textarea {
+  width: 100%;
+  margin-bottom: .8em;
+  padding: 4px 8px;
+  @include borda-arredondada;
+  border: 2px solid #ccc;
+}
+
+.menu-rodape,
+.social {
+  position: absolute;
+}
+
+.menu-rodape li,
+.social li {
+  display: inline;
+}

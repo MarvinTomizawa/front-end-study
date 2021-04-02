@@ -1,0 +1,9 @@
+.receitas{
+    background-color: rgb(231, 231, 231);
+    padding: 5rem 4rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}

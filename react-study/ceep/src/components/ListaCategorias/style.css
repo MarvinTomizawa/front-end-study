@@ -1,0 +1,20 @@
+.lista-categorias {
+  background-color: rgb(35, 54, 54);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 20vw;
+}
+
+.lista-categorias__categoria {
+  background-color: darkred;
+  border-radius: 10px;
+  border: solid black 1px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 0.6rem;
+  padding: 0.1rem 0.7rem;
+}

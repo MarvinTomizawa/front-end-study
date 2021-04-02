@@ -1,0 +1,25 @@
+//  Mixins e placeholders (só possivel no scss)
+// Para valores fixos é mais perfomatico utilizar os placeholders já que separa tudo repetido em um canto no css
+// Para valores que recebem algum parametro é melhor utilizar os mixins para evitar criação de muitos placeholders iguais
+
+@mixin borda-arredondada($raio: 0.3em) {
+  -webkit-border-radius: $raio;
+  -o-border-radius: $raio;
+  -moz-border-radius: $raio;
+  -ms-border-radius: $raio;
+  border-radius: $raio;
+}
+
+%image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+%sombra-padrao {
+  -webkit-box-shadow: $sombra-caixa;
+  -o-box-shadow: $sombra-caixa;
+  -moz-box-shadow: $sombra-caixa;
+  -ms-box-shadow: $sombra-caixa;
+  box-shadow: $sombra-caixa;
+}

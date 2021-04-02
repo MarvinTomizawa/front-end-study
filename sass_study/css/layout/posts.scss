@@ -1,0 +1,27 @@
+.post-destaque,
+.posts-antigos {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post-destaque {
+    margin-right: 2em;
+
+    img {
+        width: 100%;
+    }
+}
+
+.posts-antigos a {
+    text-decoration: none;
+    color: black;
+    background: url(../imagens/icone-relogio.png) left center no-repeat;
+    padding-left: 2.5em;
+    height: 1.7em;
+    display: block;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

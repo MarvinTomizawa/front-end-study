@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/htmlcss.jpg" alt="html e css logo" class="logo">
+            <nav>
+                <ul class="header-list">
+                    <li><a href="innitial.html">Home</a></li>
+                    <li><a href="tags/html.html">Html</a></li>
+                    <li><a href="" class="not-available">Css</a></li>
+                    <li><a href="" class="not-available">Javascript</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="centered">
+        <form action="">
+            <label for="nameField">Nome e Sobrenome</label>
+            <input 
+                class="input-centered" 
+                type="text" 
+                name="nameField" 
+                id="nameField" 
+                placeholder="Nome Sobrenome"
+                required>
+
+            <label for="email">Email</label>
+            <input 
+                class="input-centered" 
+                type="email" 
+                name="emailField" 
+                id="emailField" 
+                placeholder="email@dominio.com"
+                required>
+
+            <label for="telefoneField">Telefone</label>
+            <input 
+            class="input-centered" 
+            type="tel" 
+            name="telefoneField" 
+            id="telefoneField" 
+            placeholder="(xx)xxxxxxxxx"
+            required>
+        
+            <label for="textarea">Mensagem</label>
+            <textarea 
+            required
+            name="text area"
+            id="textarea"
+            cols="70"
+            placeholder="Mensagem"
+            rows="10"></textarea >
+            
+            <fieldset>
+                <legend>Como gostaria de receber novos conteúdos?</legend>
+                <label for="whatsappContato">
+                    <input type="radio" name="contato" id="whatsappContato">
+                    WhatsApp
+                </label>
+                
+    
+                <label for="emailContato">
+                    <input type="radio" name="contato" id="emailContato">
+                    Email
+                </label>
+    
+                <label for="telefoneContato">
+                    <input type="radio" name="contato" id="telefoneContato">
+                    Telefone
+                </label>
+            </fieldset>
+            
+            <label for="novidades">
+                <input type="checkbox" name="novidades" id="novidades">
+                Gostaria de receber novidades por email?
+            </label>
+
+            <label for="horario">
+                Que horário melhor de contato?
+                <select name="horario" id="horario">
+                    <option value="0">Manhã</option>
+                    <option value="1">Tarde</option>
+                    <option value="2">Noite</option>
+                </select>
+            </label>
+            
+            <input class="form-submit" type="submit" value="Enviar formulário.">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08:40</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08:40</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08:41</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <div class="github-logo">
+            <img src="https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo.png" alt="github icon">
+        </div>
+        <p class="copyright">&copy; Copyright Marvin Tomizawa - 2020</p>
+    </footer>
+</body>
+</html>
